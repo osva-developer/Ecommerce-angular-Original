@@ -1,0 +1,12 @@
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid"></div>
+    <div class="row"></div>
+    <div *ngFor="let temProduct of products">
+      <div class="product-box">
+        <img src="{{ temProduct.imageUrl }}" class="img-responsive" />
+        <h1>{{ temProduct.name }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
