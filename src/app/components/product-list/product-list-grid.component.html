@@ -39,6 +39,8 @@
                   [(page)]="thePageNumber"
                   [pageSize]="thePageSize"
                   [collectionSize]="theTotalElements"
+                  [maxSize]="5"
+                  [boundaryLinks]="true"
                   (pageChange)="listProducts()"
                 >
                 </ngb-pagination>
@@ -49,6 +51,7 @@
 
                 <select (change)="updatePageSize($any($event.target).value)">
                   <option selected="true">5</option>
+                  <option>2</option>
                   <option>10</option>
                   <option>20</option>
                   <option>50</option>
